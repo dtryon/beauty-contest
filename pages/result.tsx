@@ -1,4 +1,5 @@
 import useSwr from "swr";
+import Link from "next/link";
 
 import type { Result } from "../interfaces";
 
@@ -30,6 +31,12 @@ export default function Index() {
           </li>
         ))}
       </ul>
+
+      <div className="space-y-4">
+        <a className="text-sm text-blue-500" href="/result">
+          Refresh
+        </a>
+      </div>
     </div>
   );
 }

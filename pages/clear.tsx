@@ -18,7 +18,10 @@ export default function Index() {
         Beauty Contest
       </h1>
       <p className="text-center">
-        <button className="text-sm" onClick={clearGuesses}>
+        <button
+          className="h-11 w-1/2 bg-blue-500 text-white uppercase rounded-md"
+          onClick={clearGuesses}
+        >
           Clear Guesses
         </button>
       </p>
