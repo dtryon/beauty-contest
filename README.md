@@ -1,29 +1,31 @@
-# API routes with REST
+# Keynes Beauty Contest
 
-Next.js ships with [API routes](https://github.com/vercel/next.js#api-routes), which provide an easy solution to build your own `API`. This example shows how it can be used to create your [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) `API`.
+## Introduction
 
-## Deploy your own
+A Keynesian beauty contest describes a beauty contest where judges are rewarded for selecting the most popular faces among all judges, rather than those they may personally find the most attractive. This idea is often applied in financial markets, whereby investors could profit more by buying whichever stocks they think other investors will buy, rather than the stocks that have fundamentally the best value. Because when other people buy a stock, they bid up the price, allowing an earlier investor to cash out with a profit, regardless of whether the price increases are supported by its fundamentals.
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/api-routes-rest)
+### This Project
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/api-routes-rest&project-name=api-routes-rest&repository-name=api-routes-rest)
+This project is a Next.js application that allows an interactive beauty contest in its most popular form. Participants choose a number from 1 to 100 attempting to guess 2/3rds of the average guess from all participants. This application allows all participants to guess and see the result in real time.
 
-## How to use
+## Dev Setup
+
+Installation
+
+```bash
+npm i
+```
+
+Run
+
+```bash
+npm run dev
+```
+
+## Run for production
 
 Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
 
 ```bash
-npx create-next-app --example api-routes-rest api-routes-rest-app
+npm start
 ```
-
-```bash
-yarn create next-app --example api-routes-rest api-routes-rest-app
-```
-
-```bash
-pnpm create next-app --example api-routes-rest api-routes-rest-app
-```
-
-### Deploy to Vercel
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
