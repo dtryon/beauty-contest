@@ -1,4 +1,3 @@
-import { useCallback } from "react";
 import useSwr from "swr";
 
 import type { Result } from "../interfaces";
@@ -7,16 +6,6 @@ const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
 export default function Index() {
   const { data, error, isLoading } = useSwr<Result>("/api/result", fetcher);
-  const clearGuesses = useCallback(
-    async (e: React.MouseEvent<HTMLButtonElement>) => {
-      e.preventDefault();
-
-      await fetch("/api/clear", {
-        method: "POST",
-      });
-    },
-    []
-  );
 
   if (error) return <div>Failed.</div>;
   if (isLoading) return <div>Loading...</div>;
@@ -41,11 +30,6 @@ export default function Index() {
           </li>
         ))}
       </ul>
-      <p className="text-center">
-        <button className="text-sm" onClick={clearGuesses}>
-          Clear Guesses
-        </button>
-      </p>
     </div>
   );
 }
