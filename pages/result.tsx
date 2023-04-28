@@ -1,5 +1,4 @@
 import useSwr from "swr";
-import Link from "next/link";
 
 import type { Result } from "../interfaces";
 
